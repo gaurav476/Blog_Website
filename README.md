@@ -11,6 +11,8 @@ Clone the zinnia folder
 
 pip install -r requirements.txt
 
+pip install django-blog-zinnia
+
 python manage.py migrate
 
 python manage.py runserver
