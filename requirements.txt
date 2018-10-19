@@ -1,6 +1,6 @@
 beautifulsoup4==4.6.3
 Django==1.11
-django-blog-zinnia==0.20.1.dev0
+django-blog-zinnia
 django-contrib-comments==1.9.0
 django-js-asset==1.1.0
 django-mptt==0.9.1
