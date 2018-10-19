@@ -1,5 +1,5 @@
 # Blog_Website
-Django website for Blogging.
+Django website for microblogging.
 
 # For installation and running
 
