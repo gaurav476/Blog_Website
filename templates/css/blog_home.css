@@ -1,0 +1,38 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.post{padding:30px;}
+
+ul{list-style-type:none}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: PowderBlue;
+    font-size: 20px;
+}
+
+#navnav{
+	z-index: +999;
+}
+
+.post-padding{
+	padding:0;
+}
+
+.sidebarrow{width:500px;}
+
+i:focus i:hover{color:silver;}

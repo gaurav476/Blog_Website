@@ -1,0 +1,15 @@
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+    background-color:#282828;
+  }
+}
+
+ul{list-style-type:none}
+
+#navbardrop{line-height:70px;}
