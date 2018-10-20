@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+body{
+  background: url(bg.jpg);
+}
+.form-gap {
+    padding-top: 50px;
+}
+.cont{
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+         padding: 20px;
+         box-shadow: 5px 6px;
+    
+        margin :10% 20% ;
+        background-color: #c5e28d;
+        width: 40%;
+ 
+        position: center;
+}
+.form-group {
+  font-size: 34px;
+}
+</style>
+<!------ Include the above in your HEAD tag ---------->
+<title>Page Title</title>
+</head>
+<body>
+  <script>
+function myFunction() {
+    confirm("Your password has been reset.Please check your email.");
+}
+</script>
+<CENTER>
+<div class = "cont">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 
+ <div class="form-gap" padding-top: 40px ></div>
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="text-center">
+                  <h3><i class="fa fa-lock fa-4x"></i></h3>
+                  <h2 class="text-center">Forgot Password?</h2>
+                  <p>You can reset your password here.</p>
+                  <div class="panel-body">
+    
+                    <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+    
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                          <input id="inp_email" name="inp_email" placeholder="email address" class="form-control" style="font-size: 15px ; width: 45%" type="email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                         <input  onclick="myFunction()" id="inp_recover-submit"  name="inp_recover-submit" class="btn btn-lg btn-primary btn-block" style="font-size: 15px" value="Reset Password" type="submit">
+                      </div>
+                </div>
+              </div>
+            </div>
+        
+  </div>
+</div>
+</CENTER>
+
+</body>
+</html>

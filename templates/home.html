@@ -30,6 +30,14 @@
     <!-- Custom styles for this template -->
     <link href="css/blog_home.css" rel="stylesheet">
 
+<!--for tooltip text-->
+    <script>
+      $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+
 <!--
   
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,14 +59,14 @@
             <!--Row 1 -->
       <div class="row sticky" id="navnav">
             <!--navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="navnav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="navnav">
             <!-- Brand/logo -->
                 <div class="col-md-1">
                   <div class="frame" style="height: 50px;">
                     <a class="navbar-brand" href="#" text-align = "left"> PROJECT
-                        <img src="logo5.png" alt="logo" id="logo" name="logo" style="width:50px;">
+                        <img src="logo5.png" alt="logo" style="width:50px;">
                      </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" id="nav_toggle" name="nav_toggle">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="   navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                   </div>
@@ -66,44 +74,39 @@
                 <div class="col-md-2">
                 </div>
                   <!--Search bar-->
-                  <div class="col-md-3">
+                  <div class="col-md-6">
                     <form class="form-inline">
                       <div class="input-group mb-2">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="Search" id="txt_search" style="width:500px;">
                          <div class="input-group-append">
-                           <button class="btn btn-dark" type="submit" id="btn_search" name="btn_search"  data-toggle="tooltip" data-placement="bottom" title="search">Search</button>
+                           <button class="btn btn-dark" id="btn_search" name="btn_search" type="submit">Search</button>
                         </div>
                       </div>
                     </form>
                   </div>
 
                 <!--links-->
-                <div class="col-md-3">
-                  <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                     
-                      <li class="nav-item"><a class="nav-link" href=#><span class="glyphicon glyphicon-user"></span> Sign Up /</a></li>
-                      <li class="nav-item"><a class="nav-link" href=#><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                  </div>
+                <div class="col-md-1">
+
                 </div>
 
 
                 <!-- Dropdown -->
-               <div class="col-md-3">
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                  <ul class = "navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Profile </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Settings</a>
-                          <a class="dropdown-item" href="#">Log Out</a>
-                        </div>
+               <div class="col-md-2">
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                     
+                      <li class="nav-item"><a class="nav-link" href=#>Sign Up /</a></li>
+                      <li class="nav-item"><a class="nav-link" href=#> Login</a></li>
+        
+                <!--login or sign up-->
+                      <li class="nav-item"><a href="logout.html"><button class="btn btn-dark" id="btn_search" type="submit">Logout</button></a>
                       </li>
                   </ul>
                 </div>
               </div>
-        </nav>            </div>
+        </nav>           
+      </div>
       
 
         <!--Row 2-->
@@ -119,289 +122,205 @@
                 <div class="container">
 
                     <div class="row post">
-                        <div class="col-md-0.5 padding-0" style="background-color:silver;">  
-                          <ul>
-                            <li>  <i class="fas fa-long-arrow-alt-up fa-2x"></i>  </li>
-                            <li>  <i class="fas fa-long-arrow-alt-down fa-2x"></i>  </li>
-                            <li>  <i class="fas fa-share-alt fa-2x"></i>
-                            <li>  <i class="fas fa-comment-dots fa-2x"></i>  </li>
-                          </ul>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-0.5 padding-0" style="background-color:silver;">  
+                            <ul>
+                              <li>  <i class="fas fa-long-arrow-alt-up fa-2x"></i>  </li>
+                              <li>  <i class="fas fa-long-arrow-alt-down fa-2x"></i>  </li>
+                              <li>  <i class="fas fa-share-alt fa-2x"></i>
+                              <li>  <i class="fas fa-comment-dots fa-2x"></i>  </li>
+                            </ul>
+                          </div>
+                       
+                          <div class="col-md-9 padding-0">  
+                              <div class="card-header text-muted">
+                                <img src="pp1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:30px;">
+                                Posted on January 1, 2017 by
+                                <a href="#">Start Bootstrap</a>
+                              </div>
+
+                               
+                              <div class="card mb-9">
+                                  <div class="card-body">
+                                    <p>
+                                      <label id="post_content" name="post_content">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
+                                       </label>
+                                       <a href="#" class="btn btn-primary">Read &rarr;</a>
+                                    </p>                                 </div>
+
+                                  <div class="card-footer text-muted">
+                                    <p>
+                                      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Comments" aria-expanded="false" aria-controls="multiCollapseExample1" id="btn_comment">Comments</button> &nbsp
+                                      Posted on January 1, 2017 by
+                                    </p>
+                                  </div>
+                              </div>
+                              
+                              <div class="collapse multi-collapse" id="Comments">
+                                   <div class="card card-body">
+                                      <div class="form-group">
+                                          <label for="comment">Comment:</label>
+                                          <textarea class="form-control" rows="1" id="comment"></textarea>
+                                      
+                                          <ul>
+                                              <li> comment1</li>
+                                              <li> comment2</li>
+                                              <li> comment3</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
                         </div>
-                     
-                        <div class="col-md-9 padding-0">  
-                            <div class="card-header text-muted">
-                              <img src="pp1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:30px;">
-                              Posted on January 1, 2017 by
-                              <a href="#">Start Bootstrap</a>
-                            </div>
-
-                             
-                            <div class="card mb-9">
-                                <div class="card-body">
-                                    <h2 class="card-title">Post Title</h2>
-                                    <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                                    <a href="#" class="btn btn-primary">Read &rarr;</a>
-                                </div>
-
-                                <div class="card-footer text-muted">
-                                  <p>
-                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Comments" aria-expanded="false" aria-controls="multiCollapseExample1" id="Comment_btn">Comments</button>
-                                  </p>Posted on January 1, 2017 by
-                                </div>
-                            </div>
-                            
-                            <div class="collapse multi-collapse" id="Comments">
-                                 <div class="card card-body">
-                                    <div class="form-group">
-                                        <label for="comment">Comment:</label>
-                                        <textarea class="form-control" rows="1" id="comment"></textarea>
-                                    
-                                        <ul>
-                                            <li> comment1</li>
-                                            <li> comment2</li>
-                                            <li> comment3</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row post">
-                        <div class="col-md-0.5 padding-0" style="background-color:silver;">  
-                          <ul>
-                            <li>  <i class="fas fa-long-arrow-alt-up fa-2x"></i>  </li>
-                            <li>  <i class="fas fa-long-arrow-alt-down fa-2x"></i>  </li>
-                            <li>  <i class="fas fa-share-alt fa-2x"></i>
-                            <li>  <i class="fas fa-comment-dots fa-2x"></i>  </li>
-                          </ul>
-                        </div>
-                     
-                        <div class="col-md-9 padding-0">  
-                            <div class="card-header text-muted">
-                              <img src="pp1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:30px;">
-                              Posted on January 1, 2017 by
-                              <a href="#">Start Bootstrap</a>
-                            </div>
-
-                             
-                            <div class="card mb-9">
-                                <div class="card-body">
-                                    <h2 class="card-title">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                                    <a href="#" class="btn btn-primary">Read &rarr;</a>
-                                </div>
-
-                                <div class="card-footer text-muted">
-                                  <p>
-                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Comments" aria-expanded="false" aria-controls="multiCollapseExample1" id="Comment_btn">Comments</button>
-                                  </p>Posted on January 1, 2017 by
-                                </div>
-                            </div>
-                            
-                            <div class="collapse multi-collapse" id="Comments">
-                                 <div class="card card-body">
-                                    <div class="form-group">
-                                        <label for="comment">Comment:</label>
-                                        <textarea class="form-control" rows="1" id="comment"></textarea>
-                                    
-                                        <ul>
-                                            <li> comment1</li>
-                                            <li> comment2</li>
-                                            <li> comment3</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row post">
-                        <div class="col-md-0.5 padding-0" style="background-color:silver;">  
-                          <ul>
-                            <li>  <i class="fas fa-long-arrow-alt-up fa-2x"></i>  </li>
-                            <li>  <i class="fas fa-long-arrow-alt-down fa-2x"></i>  </li>
-                            <li>  <i class="fas fa-share-alt fa-2x"></i>
-                            <li>  <i class="fas fa-comment-dots fa-2x"></i>  </li>
-                          </ul>
-                        </div>
-                     
-                        <div class="col-md-9 padding-0">  
-                            <div class="card-header text-muted">
-                              <img src="pp1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:30px;">
-                              Posted on January 1, 2017 by
-                              <a href="#">Start Bootstrap</a>
-                            </div>
-
-                             
-                            <div class="card mb-9">
-                                <div class="card-body">
-                                    <h2 class="card-title">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                                    <a href="#" class="btn btn-primary">Read &rarr;</a>
-                                </div>
-
-                                <div class="card-footer text-muted">
-                                  <p>
-                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Comments" aria-expanded="false" aria-controls="multiCollapseExample1" id="Comment_btn">Comments</button>
-                                  </p>Posted on January 1, 2017 by
-                                </div>
-                            </div>
-                            
-                            <div class="collapse multi-collapse" id="Comments">
-                                 <div class="card card-body">
-                                    <div class="form-group">
-                                        <label for="comment">Comment:</label>
-                                        <textarea class="form-control" rows="1" id="comment"></textarea>
-                                    
-                                        <ul>
-                                            <li> comment1</li>
-                                            <li> comment2</li>
-                                            <li> comment3</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row post">
-                        <div class="col-md-0.5 padding-0" style="background-color:silver;">  
-                          <ul>
-                            <li>  <i class="fas fa-long-arrow-alt-up fa-2x"></i>  </li>
-                            <li>  <i class="fas fa-long-arrow-alt-down fa-2x"></i>  </li>
-                            <li>  <i class="fas fa-share-alt fa-2x"></i>
-                            <li>  <i class="fas fa-comment-dots fa-2x"></i>  </li>
-                          </ul>
-                        </div>
-                     
-                        <div class="col-md-9 padding-0">  
-                            <div class="card-header text-muted">
-                              <img src="pp1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:30px;">
-                              Posted on January 1, 2017 by
-                              <a href="#">Start Bootstrap</a>
-                            </div>
-
-                             
-                            <div class="card mb-9">
-                                <div class="card-body">
-                                    <h2 class="card-title">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                                    <a href="#" class="btn btn-primary">Read &rarr;</a>
-                                </div>
-
-                                <div class="card-footer text-muted">
-                                  <p>
-                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Comments" aria-expanded="false" aria-controls="multiCollapseExample1" id="Comment_btn">Comments</button>
-                                  </p>Posted on January 1, 2017 by
-                                </div>
-                            </div>
-                            
-                            <div class="collapse multi-collapse" id="Comments">
-                                 <div class="card card-body">
-                                    <div class="form-group">
-                                        <label for="comment">Comment:</label>
-                                        <textarea class="form-control" rows="1" id="comment"></textarea>
-                                    
-                                        <ul>
-                                            <li> comment1</li>
-                                            <li> comment2</li>
-                                            <li> comment3</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    
-                    </div>
-
-                </div>
-            </div>
-
-                <div class="col-2" >
-      <!--recent posts -->
-      <div class = "css" style="position: fixed;">
-        <div class = "row">
-          <div class="card my-4 sticky-top sticky-bottom" >
-
-                    <h5 class="card-header">Recent Posts</h5>
-                    <div class="card-body">
-                      <div class="input-group">
-                        <ul class="list-unstyled components">
-                            <li class="active">
-                                <a href="#" data-toggle="collapse" aria-expanded="false">post1</a>
-                            </li>
-                            <li>
-                                <a href="#">post2</a>
-                            </li>
-                            <li>
-                                <a href="#">post3</a>
-                            </li>
-                            <li>
-                                <a href="#">post4</a>
-                            </li>
-                            <li>
-                                <a href="#">post5</a>
-                            </li>
-                        </ul>
-
                       </div>
                     </div>
-          </div>
-        </div>
 
+                    <div class="row post">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-0.5 padding-0" style="background-color:silver;">  
+                            <ul>
+                              <li>  <i class="fas fa-long-arrow-alt-up fa-2x"></i>  </li>
+                              <li>  <i class="fas fa-long-arrow-alt-down fa-2x"></i>  </li>
+                              <li>  <i class="fas fa-share-alt fa-2x"></i>
+                              <li>  <i class="fas fa-comment-dots fa-2x"></i>  </li>
+                            </ul>
+                          </div>
+                       
+                          <div class="col-md-9 padding-0">  
+                              <div class="card-header text-muted">
+                                <img src="pp1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:30px;">
+                                Posted on January 1, 2017 by
+                                <a href="#">Start Bootstrap</a>
+                              </div>
 
+                               
+                              <div class="card mb-9">
+                                  <div class="card-body">
+                                    <p>
+                                      <label id="post_content" name="post_content">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
+                                       </label>
+                                       <a href="#" class="btn btn-primary">Read &rarr;</a>
+                                    </p>                                 </div>
 
-      <!--trending tags-->
-      <div class ="row">
-      <div class="card my-4  sticky-top sticky-bottom">
-                <h5 class="card-header">  Trending Tags</h5>
-                <div class="card-body">
-                  <div class="input-group">
-                    <ul class="list-unstyled components">
-                        <li class="active">
-                            <a href="#" data-toggle="collapse" aria-expanded="false">tag1</a>
-                        </li>
-                        <li>
-                            <a href="#">tag2</a>
-                        </li>
-                        <li>
-                            <a href="#">tag3</a>
-                        </li>
-                        <li>
-                            <a href="#">tag4</a>
-                        </li>
-                        <li>
-                            <a href="#">tag5</a>
-                        </li>
-                    </ul>
+                                  <div class="card-footer text-muted">
+                                    <p>
+                                      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Comments" aria-expanded="false" aria-controls="multiCollapseExample1" id="btn_comment">Comments</button> &nbsp
+                                      Posted on January 1, 2017 by
+                                    </p>
+                                  </div>
+                              </div>
+                              
+                              <div class="collapse multi-collapse" id="Comments">
+                                   <div class="card card-body">
+                                      <div class="form-group">
+                                          <label for="comment">Comment:</label>
+                                          <textarea class="form-control" rows="1" id="comment"></textarea>
+                                      
+                                          <ul>
+                                              <li> comment1</li>
+                                              <li> comment2</li>
+                                              <li> comment3</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                   </div>
+                </div><!--end of col2 of row2-->
+
+                <!--row3 sidebar on right-->
+                <div class="col-md-3" >
+                    <!--recent posts -->
+                    <div class = "css" style="position: fixed;">
+                      <div class = "row">
+                        <div class="card my-4  sidecard sticky-top sticky-bottom" >
+
+                                  <h5 class="card-header sidecard_header">Recent Posts</h5>
+                                  <div class="card-body">
+                                    <div class="input-group">
+                                      <ul class="list-unstyled components">
+                                          <li class="active">
+                                              <a href="#" data-toggle="collapse" aria-expanded="false">post1</a>
+                                          </li>
+                                          <li>
+                                              <a href="#">post2</a>
+                                          </li>
+                                          <li>
+                                              <a href="#">post3</a>
+                                          </li>
+                                          <li>
+                                              <a href="#">post4</a>
+                                          </li>
+                                          <li>
+                                              <a href="#">post5</a>
+                                          </li>
+                                      </ul>
+
+                                    </div>
+                                  </div>
+                        </div>
+                      </div>
+
+
+
+                    <!--second row clm3 r2-->
+                    <div class ="row">
+                    <div class="card my-4 sidecard sticky-top sticky-bottom">
+                              <h5 class="card-header sidecard_header">  Trending Tags</h5>
+                              <div class="card-body">
+                                <div class="input-group">
+                                  <ul class="list-unstyled components">
+                                      <li class="active">
+                                          <a href="#" data-toggle="collapse" aria-expanded="false">tag1</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">tag2</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">tag3</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">tag4</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">tag5</a>
+                                      </li>
+                                  </ul>
+
+                                </div>
+                              </div>
+                    </div>
+                  </div>
+
+
+                    <!--second row clm3 r3-->
+                    <div class = "btn">
+                    <div class ="row">
+                    <div class="card my-4 sidecard sticky-top sticky-bottom">
+                      <!--        <h5 class="card-header">trending tegs</h5>
+                              <div class="card-body">
+                                <div class="input-group">
+                                -->
+                                  <button id ="btn1" class="btn btn-info">create post</button><a>
+
+                            <!--    </div>
+                            </div> -->
+                    </div>
+                  </div>
                 </div>
-      </div>
-    </div>
 
-
-      <!--create post-->
-      <div class = "btn">
-      <div class ="row">
-      <div class="card my-4 sticky-top sticky-bottom">
-        <button id ="btn1" class="btn btn-info">create post</button>
-      </div>
-    </div>
-  </div>
-
-
-
-                </div>
-
-            </div>
+      
+            </div><!---end of row2-->
 
         </div>
-        </div>
-    </div>
 
   </body>
 

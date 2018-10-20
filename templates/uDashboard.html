@@ -61,11 +61,13 @@
                     </button>
                   </div>
                 </div>
+                <!--for proper spacing-->
                 <div class="col-md-2">
                 </div>
+
                   <!--Search bar-->
-                  <div class="col-md-5">
-                    <form class="form-inline">
+                  <div class="col-md-6">
+                    <form class="form-inline" id="form_search" name="form_search">
                       <div class="input-group mb-2">
                         <input type="text" class="form-control" placeholder="Search" id="txt_search" style="width:500px;">
                          <div class="input-group-append">
@@ -80,15 +82,15 @@
                   <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                      
-                      <li class="nav-item"><a class="nav-link" href=#><span class="glyphicon glyphicon-user"></span> Sign Up /</a></li>
-                      <li class="nav-item"><a class="nav-link" href=#><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      <li class="nav-item"><a class="nav-link" href=#>Sign Up /</a></li>
+                      <li class="nav-item"><a class="nav-link" href=#> Login</a></li>
                     </ul>
                   </div>
                 </div>
 
 
                 <!-- Dropdown -->
-               <div class="col-md-2">
+               <div class="col-md-1">
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                   <ul class = "navbar-nav ml-auto">
 <!--                <li class="nav-item dropdown">
@@ -104,7 +106,8 @@
                   </ul>
                 </div>
               </div>
-        </nav>        
+        </nav>           
+       
         
       </div>
      
@@ -193,9 +196,7 @@
             </div>
 
             <div class="row r3">
-              <input type="password" maxlength="100" id="txt_password" readonly="readonly">
-              <a href="change_password.html"><button id="btn_change_pwd" class="btnn" type="button" data-toggle="collapse" data-target="#change_password" aria-expanded="false" aria-controls="multiCollapseExample1" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Change Password">Change</button></a>
-  
+              <a href="change_password.html"><button id="btn_change_pwd" class="btnn" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Change Password">Change Password</button></a>
             </div>
 
             <div class="row">
@@ -235,7 +236,7 @@
                      
                         <div class="col-md-9 padding-0">  
                             <div class="card-header text-muted">
-                              <a href ="uDashboard.html" class= "close" datadismiss ="alert" id ="id_close_post" aria-label="close">&times</a>
+                              <a href ="uDashboard.html" class= "close" datadismiss ="alert" id ="id_close_post" aria-label="close"><span id="btn_close" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="delete this post">&times delete post</span></a>
                               <img src="pp1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:30px;">
                               Posted on January 1, 2017 by
                               <a href="#">Start Bootstrap</a>
@@ -255,7 +256,7 @@
                                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Comments" aria-expanded="false" aria-controls="multiCollapseExample1" id="Comment_btn">Comments</button>
                                   Posted on January 1, 2017 by
                                   </p>
-                                  <button class ="btn_delete_post" name ="btn_delete_post" class="btn btn-info" >delete post</button>
+                                  
                                 </div>
                             </div>
                             
