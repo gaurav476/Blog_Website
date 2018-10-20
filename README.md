@@ -3,12 +3,16 @@ Django website for microblogging.
 
 # For installation and running
 
+Branch: Zinnia
+
+Create a virtual environment
+
+Clone the zinnia folder
+
 pip install -r requirements.txt
+
+pip install django-blog-zinnia
 
 python manage.py migrate
 
-python manage.py puput_initial_data
-
-Refer https://puput.readthedocs.io/en/latest/setup.html
-
-Branch for text to speech 
+python manage.py runserver

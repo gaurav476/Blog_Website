@@ -1,0 +1,153 @@
+<html><head>
+    <title>Form</title>
+<style type="text/css">
+body{
+    overflow: hidden;
+    position: center;
+
+}
+    .container {
+        font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 0px;
+        /*box-shadow: 5px 10px;*/
+        margin :2% 28% ;
+        background-color: #C4DFE6;
+        width: 40%;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 10px;
+    }
+    .form
+    {
+        font-size :14px;
+        padding :15px;
+        margin :3% 8% ;
+        border :3px solid #0ea;
+        border-width : 0px;
+        background-color: #07575B;
+        box-shadow: 0 0 10px 5px rgba(0, 0,0, .65) ;
+    }
+    .input
+    {
+        float : right ;
+        font-size: 100%;
+        margin-left:5em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+
+    }
+    .gen span 
+    {
+        float : right ;
+    }
+    div
+    {
+        margin-bottom : 20px;
+        text-align: left;
+        font-size: 100%;
+    }
+    body{
+  background: url(bg.jpg);
+}
+    button
+    {
+        font-size :4mm;
+        padding : 2px ;
+        box-shadow: 1px 2px ;
+        border: 2px solid #000000;
+        background-color:#07575B;
+        margin-left: 25%;
+
+    }
+    #TextShadow
+    {
+        margin-top : 30px;
+        
+        
+    }
+    .imgcontainer {
+    text-align: center;
+    border-radius: 50%;
+    }
+
+</style>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"></head>
+
+
+<body>
+	
+    <div class="container">
+    <div id="Textshadow" style="margin-left: 32%;font-size:20px;"> <h2>Sign Up Form</h2></div>
+    <div class="imgcontainer">
+    <label for="image">
+      <input name="inp_image" id="inp_image" style="display:none;" type="file">
+      <img width="150" height="150" class="imgcontainer" src="signup.jpg">
+   </label>
+  </div>
+    <div>
+    <form name="F1" class="form">
+        <table>
+        <tr>
+            <td><label for=" firstname" id="lbl_firstname" name="lbl_firstname">First Name : </label></td>
+            <td align="left"><input id="inp_firstname" name="inp_firstname" class="input" type="text" ></td>
+        </tr>
+        
+        <tr>
+            <td><label for=" lastname" id="lbl_lastname" name="lbl_lastname">Last Name : </label></td>
+            <td align="left"><input id="inp_lastname" name="inp_lastname" class="input" type="text"></td>
+        
+        </tr>
+        <tr>
+            <td><label for=" username" id="lbl_username" name="lbl_username">Username : </label></td>
+            <td align="left"><input id="inp_Username" name="inp_Username" class="input" type="text"></td>
+        </tr>
+        
+        <tr>
+            <td><label for=" password" id="lbl_password" name="lbl_password">Password : </label></td>
+            <td align="left"><input  id="inp_password" name="inp_password" class="input" type="password"></td>
+        </tr>
+        
+        <tr>
+        
+            <td><label for=" confirmPass"  id="lbl_confirmPass name="lbl_confirmPass">Confirm Password : </label></td>
+            <td align="left"><input id="inp_confirmPass" name="inp_confirmPass" class="input" type="password"></td>
+        </tr>
+        
+        <tr>
+        
+            <td><label for=" dob" id="lbl_dob" name="lbl_dob">Date of Birth : </label></td>
+            <td align="left"><input id="inp_dob" name="inp_dob" class="input" type="date" style="width: 68%"></td>
+        </tr>
+        <tr>
+            <td><label for="gender"  id="lbl_gender" name="lbl_gender">Gender : </label></td>
+             
+                <td align="left"><input id="lbl_gender" name="lbl_gender" type="radio"style="margin-left:6em">
+                <label for="male" id="lbl_gender" name="lbl_gender">Male</label>
+            
+                <input name="lbl_gender" id="female" type="radio">
+                <label for=" female" name="lbl_gender">Female</label></td>
+                
+            </tr>
+        
+        <tr>
+        <td><label for=" nationality"  id="lbl_nationality" name="lbl_nationality">Nationality : </label></td>
+        <td align="left"><input  id="inp_nationality" name="inp_nationality" class="input" type="text"></td>
+        </tr>
+    
+</table>
+
+    <div>
+        <br>
+        <button id="btn_reset" name="btn_reset" type="reset" style ="background-color:#C4DFE6">Reset</button>
+        <button  id="btn_signup" name="btn_signup" type="submit" style ="background-color:#C4DFE6">SignUp</button>
+        </div>
+      </form>
+
+  </div>
+  <br>
+  </div>
+
+</body></html>

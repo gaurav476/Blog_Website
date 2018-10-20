@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+ <style>
+.form-gap {
+    padding: 20px;
+}
+body{
+  background: url(bg.jpg);
+}
+.cont{
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+         border: 2px solid;
+         padding: 30px;
+         box-shadow: 5px 8px;
+         margin :5% 20% ;
+         background-color: #c5e28d;
+         width: 35%;
+        position: center;
+}
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity: 0.6s;
+    margin-bottom: 15px;
+</style>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"></head>
+</head>
+<body>
+ 
+ <script>
+function myFunction() {
+    confirm("Your password has been changed.");
+}
+</script>
+
+    
+    <CENTER>
+<div class="cont">
+
+ <div class="form-gap" padding-top: 70px ></div> 
+    <div style="margin-left: 1%">
+        <h2>Change Password <span class="extra-title muted"></span></h2>
+    </div><form method="POST">
+        <table>
+        <tr>
+            <td><label for="current_password" id = "lbl_current_password" name = "lbl_current_password" class="control-label">Current Password:</label></td>
+            <td><input type="password" id="inp_current_password" name="inp_current_password" style="width: 120%"></td>
+        </tr>
+        <tr>
+            <td><label for="new_password"  name="lbl_new_password" id="lbl_new_password" class="control-label">New Password:</label></td>
+            <td><input type="password" name="inp_new_password" id="inp_new_password"style="width: 120%"></td>
+        </tr>
+        <tr>
+            <td><label for="confirm_password" name="lbl_confirm_password" id="lbl_confirm_password" class="control-label">Confirm Password:</label></td>
+            <td><input type="password" id="inp_confirm_password" name="confirm_password" style="width: 120%"></td>
+        </tr>
+</table>
+<br>
+<div align="left">   
+<button onclick="myFunction()" href="#" class="btn btn-primary" id="password_modal_save" style="margin-right: 330px" >Save changes</button> 
+<button "href="#" class="btn" data-dismiss="modal" aria-hidden="true">Reset</button>
+</div>
+</form>
+</div>
+</CENTER>
+</body>

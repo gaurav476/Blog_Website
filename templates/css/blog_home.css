@@ -1,0 +1,82 @@
+body {
+  padding-top: 54px;
+  font-weight:400;
+  background-color: #c5e28d;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+.navbar{background-color: #2c1846;
+        height:70px;
+      }
+
+.bg-info {
+
+    background-color: #2c1846 !important;
+
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.post{padding:30px;}
+
+ul{list-style-type:none}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: PowderBlue;
+    font-size: 20px;
+}
+
+#navnav{
+	z-index: +999;
+  font-weight:400;
+}
+
+.post-padding{
+	padding:0;
+}
+
+.sidebarrow{width:500px;}
+
+i:focus i:hover{color:silver;}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-footer {
+    padding-top:0.25;
+    padding-bottom:0;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.sidecard {
+  
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #feffff;
+}
+
+.sidecard_header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #0ea7b5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}

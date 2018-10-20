@@ -1,0 +1,58 @@
+body {
+  padding-top: 54px;
+  font-weight:400px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.post{padding:30px;}
+
+ul{list-style-type:none}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: PowderBlue;
+    font-size: 20px;
+}
+
+#navnav{
+	z-index: +999;
+}
+
+.post-padding{
+	padding:0;
+}
+
+#tag_heading{
+			background-color:#2c1846;
+			width:200px;
+}
+
+.sidebarrow{width:500px;}
+
+i:focus i:hover{color:silver;}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-footer {
+    padding-top:0.25;
+    padding-bottom:0;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}

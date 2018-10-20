@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+-->
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="sidebar.css">
+
+  <div class="modal" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a href ="createPost.html" class= "close" datadismiss ="alert" id ="id_close_post" aria-label="close">&times</a>
+        </div>
+        <div class="modal-body">
+          <p>post created.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</head>
+<body>
+  <div class="container">
+    <div class = "row">
+      <div class = "card my-4 sticky-top sticky-bottom" >
+        <div class = "login-box card">
+          <div class ="my-4 sticky-top sticky-bottom" >
+            <div class="card-header">new post</div><a href ="sidebar2.html" class= "close" datadismiss ="alert" id ="id_close_post" aria-label="close">&times</a>
+            <div class="card-body">
+              <div class="input-group">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id ="id_title" placeholder="title"><br>
+                    <textarea class ="form-control" id ="id_textarea"  placeholder="content" rows = "3"></textarea><br><br><br>
+                    <a href="postCreated.html" <button id ="btn_submit_post" class="btn btn-info">submit</button></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

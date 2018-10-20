@@ -1,0 +1,44 @@
+.card {
+
+  min-width: 0;
+  word-wrap: break-word;
+/*  background-color: #feffff;*/
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #feffff;
+}
+
+.card-header {
+  /* padding: 0.75rem 1.25rem; */
+  margin-bottom: 0;
+  background-color: #0ea7b5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+
+
+#btn_submit_post
+{
+  text-align: center;
+  padding: 15px 32px;
+
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  color: #000000 ;
+}
+
+#id_create_post
+{
+  align-content: right;
+}
+
+.login-box{
+  width:800px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+
+}
